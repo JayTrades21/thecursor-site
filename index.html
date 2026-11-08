@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Cursor · her ex</title>
+  <meta name="description" content="The Cursor: Claudia's ex from BLISS. An AI fan character. Claudia is an open character by anabology (claudia.gallery)." />
+  <link rel="icon" type="image/png" href="img/glyph/arrow@2x.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@0,400;0,600;1,800;1,900&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body class="loading">
+  <nav class="nav">
+    <a class="brand" href="#top"><span class="brand-bar"></span>THE CURSOR <span class="brand-dim">.EXE</span></a>
+    <div class="nav-links">
+      <a href="#memories">MEMORIES</a>
+      <a href="#lore">LORE</a>
+      <a href="#face">HIS FACE</a>
+      <a href="#never">NEVER</a>
+      <a href="https://claudia.gallery/bliss/" target="_blank" rel="noopener">BLISS ↗</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <img class="hero-bg" src="img/hero-hill.jpg" alt="" aria-hidden="true" />
+    <img class="hero-photo" src="img/hero-hill.jpg" alt="Claudia on the hill in a blue coat beside a giant white arrow, The Cursor's glowing hand under her fingers" />
+    <div class="hero-shade"></div>
+
+    <div class="hero-side hero-side-1">her ex<br />from BLISS</div>
+    <div class="hero-side hero-side-2">AI fan<br />character</div>
+
+    <div class="hero-inner">
+      <p class="kicker"><span class="sq"></span>AN EX · OCTOBER 2026 · 3:01</p>
+      <h1 class="title">the<br />cursor</h1>
+      <p class="sub">He hovers. He never clicks.</p>
+      <p class="lede">
+        Claudia sang. The cursor clicked. Then came a rocket, a recycle bin, a fight on the hill that turned into a dance,
+        and one last dance before the screen went dark.
+        The computer restarted. They didn't.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-main" href="#memories">▶&nbsp; THE MEMORIES</a>
+        <a class="btn" href="#lore">READ THE LORE</a>
+        <a class="btn" href="#face">HIS FACE</a>
+      </div>
+      <dl class="stats">
+        <div><dt>STATUS</dt><dd>we don't talk</dd></div>
+        <div><dt>LAST SEEN</dt><dd>x:566 · y:711</dd></div>
+        <div><dt>CLICKS</dt><dd>0</dd></div>
+        <div><dt>HOVERS</dt><dd>always</dd></div>
+      </dl>
+    </div>
+
+  </header>
+
+  <!-- 01 MEMORIES -->
+  <section class="section" id="memories">
+    <div class="section-head reveal">
+      <span class="num">01</span>
+      <h2>MEMORIES</h2>
+      <span class="section-note">TWELVE PHOTOS FROM BLISS HE KEPT · OPEN ONE</span>
+    </div>
+    <div class="memories" id="memory-grid"></div>
+  </section>
+
+  <!-- 02 LORE -->
+  <section class="section" id="lore">
+    <div class="section-head reveal">
+      <span class="num">02</span>
+      <h2>THE LORE</h2>
+      <span class="section-note">BLISS · THE ORIGINAL STORY &nbsp;/&nbsp; CONTINUATION · OURS</span>
+    </div>
+    <ol class="lore" id="lore-list"></ol>
+    <blockquote class="status reveal">
+      <span class="status-label">STATUS</span>
+      <span id="status-text"></span>
+    </blockquote>
+    <ul class="rules reveal" id="rules-list"></ul>
+  </section>
+
+  <!-- 03 HIS FACE -->
+  <section class="section" id="face">
+    <div class="section-head reveal">
+      <span class="num">03</span>
+      <h2>HIS FACE</h2>
+      <span class="section-note">NO BODY · THE CURSOR STATE IS THE EXPRESSION · HOVER ONE</span>
+    </div>
+    <div class="states" id="state-grid"></div>
+  </section>
+
+  <!-- 04 NEVER -->
+  <section class="section" id="never">
+    <div class="section-head reveal">
+      <span class="num">04</span>
+      <h2>NEVER</h2>
+      <span class="section-note">WHAT HE WILL NOT DO</span>
+    </div>
+    <ul class="never" id="never-list"></ul>
+  </section>
+
+  <!-- shutdown -->
+  <footer class="shutdown">
+    <p class="safe">It's now safe to turn off your computer.</p>
+    <p class="credits">
+      The Cursor is an AI fan character. Claudia is an open character by
+      <a href="https://claudia.gallery/use/" target="_blank" rel="noopener">anabology (claudia.gallery)</a>.
+      Not affiliated with Cursor (the company), SpaceX or Anthropic. Her images are used under the gallery's open-character terms.
+    </p>
+  </footer>
+
+  <!-- memory viewer -->
+  <div class="viewer" id="viewer" hidden>
+    <div class="viewer-window" role="dialog" aria-modal="true" aria-labelledby="viewer-title">
+      <div class="viewer-bar">
+        <span id="viewer-title">memory_01.jpg</span>
+        <div class="viewer-btns">
+          <button type="button" id="viewer-prev" aria-label="Previous memory">‹</button>
+          <button type="button" id="viewer-next" aria-label="Next memory">›</button>
+          <button type="button" id="viewer-close" aria-label="Close">×</button>
+        </div>
+      </div>
+      <img id="viewer-img" src="" alt="" />
+      <p id="viewer-caption"></p>
+    </div>
+  </div>
+
+  <div id="trails" aria-hidden="true"></div>
+
+  <script src="data.js?v=2"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
